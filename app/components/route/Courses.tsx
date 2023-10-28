@@ -1,15 +1,15 @@
-import { useGetAllCoursesQuery } from "@/redux/features/courses/courseApi";
+import { useGetUsersAllCoursesQuery } from "@/redux/features/courses/courseApi";
 import React, { useEffect, useState } from "react";
 import CourseCard from "../Course/CourseCard";
 
 type Props = {};
 
 const Courses = (props: Props) => {
-  const { data, isLoading } = useGetAllCoursesQuery({});
-  const [courses, setCourses] = useState<any[]>([]);
+  const { data, isLoading } = useGetUsersAllCoursesQuery({});
+  const [course, setCourse] = useState<any[]>([]);
 
   useEffect(() => {
-    setCourses(data?.courses);
+    setCourse(data?.course);
   }, [data]);
 
   return (
@@ -27,8 +27,8 @@ const Courses = (props: Props) => {
           <br />
           <br />
           <div className="grid grid-cols-1 gap-[20px] md:grid-cols-2 md:gap-[25px] lg:grid-cols-3 lg:gap-[25px] 1500px:grid-cols-4 1500px:gap-[35px] mb-12 border-0">
-            {courses &&
-              courses.map((item: any, index: number) => (
+            {course &&
+              course.map((item: any, index: number) => (
                 <CourseCard item={item} key={index} />
               ))}
           </div>

@@ -7,6 +7,7 @@ import { redirect } from "next/navigation";
 import ProfileInfo from "./ProfileInfo";
 import ChangePassword from "./ChangePassword";
 import dynamic from "next/dynamic";
+import toast from "react-hot-toast";
 
 type Props = {
   user: any;
@@ -25,6 +26,7 @@ const Profile: FC<Props> = ({ user }) => {
   const logOutHandler = async () => {
     setLogout(true);
     await signOut();
+    toast.error("Logout successfully");
     // redirect("/");
   };
 
