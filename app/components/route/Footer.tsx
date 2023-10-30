@@ -110,11 +110,11 @@ const Footer = (props: Props) => {
             </h3>
             <p className="text-base text-black dark:text-gray-380  no-underline hover:underline dark:text-white  pb-2">
               {" "}
-              Call Us: 1-885-665-2022
+              Call Us: 044-2456789
             </p>
             <p className="text-base text-black dark:text-gray-380  no-underline hover:underline dark:text-white pb-2">
               {" "}
-              Address: +7011 Vermont Ave, Los Angeles, CA 90044{" "}
+              Address: +7011 king&#39;s Gaurd Ave, Red Keep,Kings Landing.{" "}
             </p>
             <p className="text-base text-black dark:text-gray-380  no-underline hover:underline dark:text-white pb-2">
               Mail Us: hello@elearning.com
