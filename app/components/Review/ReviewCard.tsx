@@ -19,6 +19,7 @@ const ReviewCard = (props: Props) => {
           height={50}
           className="w-[50px] h-[50px] rounded-full object-cover"
         />
+        {/* for lap */}
         <div className="800px:flex justify-between w-full hidden">
           <div className="pl-4">
             <h5 className="text-[20px] Otext-black dark: text-white">
