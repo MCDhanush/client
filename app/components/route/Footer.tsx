@@ -114,7 +114,7 @@ const Footer = (props: Props) => {
             </p>
             <p className="text-base text-black dark:text-gray-380  no-underline hover:underline dark:text-white pb-2">
               {" "}
-              Address: +7011 king&#39;s Gaurd Ave, Red Keep,Kings Landing.{" "}
+              Address: +7011 King&#39;s Gaurd Ave, Red Keep,Kings Landing.{" "}
             </p>
             <p className="text-base text-black dark:text-gray-380  no-underline hover:underline dark:text-white pb-2">
               Mail Us: hello@elearning.com
