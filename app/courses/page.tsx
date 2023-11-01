@@ -21,7 +21,7 @@ const Page = (props: Props) => {
   useEffect(() => {
     setCourse(data?.course);
   }, [data]);
-  console.log(data);
+  // console.log(data);
 
   return (
     <div>
