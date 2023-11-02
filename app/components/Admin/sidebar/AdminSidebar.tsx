@@ -190,13 +190,13 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-            <Item
+            {/* <Item
               title="Ivoices"
               to="/admin/invoices"
               icon={<ReceiptOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
-            />
+            /> */}
             <Typography
               variant="h5"
               className="!text-[18px] text-black dark:text-[#ffffffc1] capitalize !font-[400]"
