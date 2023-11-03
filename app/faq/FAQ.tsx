@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { styles } from "../styles/styles";
 import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
 import dynamic from "next/dynamic";
+import RemoveIcon from "@mui/icons-material/Remove";
 
 type Props = {};
 
@@ -28,7 +29,13 @@ const FAQ = (props: Props) => {
           <div className=" border-b-blue-950  border-b-2 pt-4 pb-8">
             <div className="flex flex-row justify-between">
               <p>Will i receive a certificate for each course?</p>
-              <AddOutlinedIcon onClick={() => setOpen(!open)} />
+              <div className="">
+                {open ? (
+                  <RemoveIcon onClick={() => setOpen(!open)} />
+                ) : (
+                  <AddOutlinedIcon onClick={() => setOpen(!open)} />
+                )}
+              </div>
             </div>
             <br />
             {!open ? (
@@ -45,7 +52,13 @@ const FAQ = (props: Props) => {
           <div className=" border-b-blue-950  border-b-2 pt-4  pb-8">
             <div className="flex flex-row justify-between">
               <p>When i Get course Certificate</p>
-              <AddOutlinedIcon onClick={() => setOpen2(!open2)} />
+              <div className="">
+                {open2 ? (
+                  <RemoveIcon onClick={() => setOpen2(!open2)} />
+                ) : (
+                  <AddOutlinedIcon onClick={() => setOpen2(!open2)} />
+                )}
+              </div>
             </div>
             <br />
             {!open2 ? (
@@ -62,7 +75,13 @@ const FAQ = (props: Props) => {
           <div className=" border-b-blue-950  border-b-2 pt-4 pb-8 ">
             <div className="flex flex-row justify-between">
               <p>Can i download the course</p>
-              <AddOutlinedIcon onClick={() => setOpen1(!open1)} />
+              <div className="">
+                {open1 ? (
+                  <RemoveIcon onClick={() => setOpen1(!open1)} />
+                ) : (
+                  <AddOutlinedIcon onClick={() => setOpen1(!open1)} />
+                )}
+              </div>
             </div>
             <br />
             {!open1 ? (
@@ -79,7 +98,13 @@ const FAQ = (props: Props) => {
           <div className=" border-b-blue-950   border-b-2 pt-4 pb-8">
             <div className="flex flex-row justify-between">
               <p>Will i receive a certificate for each course?</p>
-              <AddOutlinedIcon onClick={() => setOpen3(!open3)} />
+              <div className="">
+                {open3 ? (
+                  <RemoveIcon onClick={() => setOpen3(!open3)} />
+                ) : (
+                  <AddOutlinedIcon onClick={() => setOpen3(!open3)} />
+                )}
+              </div>
             </div>
             <br />
             {!open3 ? (
