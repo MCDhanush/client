@@ -39,7 +39,7 @@ const ChangePassword = (props: Props) => {
         Change Password
       </h1>
       <form
-        aria-required
+        // aria-required="true"
         onSubmit={passwordChangeHandler}
         className="flex flex-col items-center"
       >

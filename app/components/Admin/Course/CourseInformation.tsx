@@ -2,6 +2,7 @@ import React, { FC, useState } from "react";
 import { styles } from "@/app/styles/styles";
 import { BiBracket } from "react-icons/bi";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 
 type Props = {
   courseInfo: any;
@@ -206,7 +207,7 @@ const CourseInformation: FC<Props> = ({
             onDrop={handleDrop}
           >
             {courseInfo.thumbnail ? (
-              <img
+              <Image
                 src={courseInfo.thumbnail}
                 alt=""
                 className="max-h-full w-full object-cover"
