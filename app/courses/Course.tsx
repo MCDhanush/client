@@ -13,7 +13,7 @@ type Props = {
 };
 
 const Course: FC<Props> = ({ item, isProfile }) => {
-  console.log(item);
+  // console.log(item);
   return (
     <>
       <Link

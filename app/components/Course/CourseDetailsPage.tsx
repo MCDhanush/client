@@ -18,7 +18,7 @@ const CourseDetailsPage = ({ id }: Props) => {
   const [activeItem, setActiveItem] = useState(1);
   const [route, setRoute] = useState("Login");
   const { data, isLoading } = useGetCourseDetailsQuery(id);
-  console.log(data);
+  // console.log(data);
 
   return (
     <>

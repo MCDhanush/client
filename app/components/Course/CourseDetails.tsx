@@ -17,7 +17,7 @@ const CourseDetails = ({ data }: Props) => {
   const dicountedPercentageprice = dicountPercentage.toFixed(0);
 
   // const isPurchhased
-  console.log(data.course);
+  // console.log(data.course);
 
   return (
     <div>

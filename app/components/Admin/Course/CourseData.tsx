@@ -57,9 +57,9 @@ const CourseData: FC<Props> = ({
   };
 
   // console.log(`hi ${benefits}`);
-  prerequisites.map((e: any) => {
-    console.log(e);
-  });
+  // prerequisites.map((e: any) => {
+  //   console.log(e);
+  // });
 
   return (
     <div className="w-[80%] m-auto mt-24 block">
