@@ -34,9 +34,9 @@ const Header: FC<Props> = ({ activeItem, setOpen, route, open, setRoute }) => {
   const { data } = useSession();
   const [socialAuth, { isSuccess, error }] = useSocialAuthMutation();
   const [logout, setLogout] = useState(false);
-  const {} = useLogOutQuery(undefined, {
-    skip: !logout ? true : false,
-  });
+  // const {} = useLogOutQuery(undefined, {
+  //   skip: logout ? true : false,
+  // });
 
   useEffect(() => {
     if (!user) {
@@ -74,7 +74,7 @@ const Header: FC<Props> = ({ activeItem, setOpen, route, open, setRoute }) => {
     }
   };
 
-  console.log(user);
+  // console.log(user);
 
   return (
     <div className="w-full relative">
