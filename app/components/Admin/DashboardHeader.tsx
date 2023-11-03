@@ -18,12 +18,12 @@ const DashboardHeader: FC<Props> = ({ open, setOpen }) => {
         className="relative  text-black dark:text-white cursor-pointer m-2"
         onClick={() => setOpen(!open)}
       >
-        <IoMdNotificationsOutline className="text-2xl cursor-pointer dark:text-white text-black" />
+        {/* <IoMdNotificationsOutline className="text-2xl cursor-pointer dark:text-white text-black" />
         <span className="absolute -top-2 -right-2 bg-[#3ccba0]  rounded-full w-[20px] h-[20px] text-[12px] flex items-center text-white">
           3
-        </span>
+        </span> */}
       </div>
-      {open && (
+      {/* {open && (
         <div className="w-[350px] h-[50vh] dark:bg-[#111C43] text-white bg-white shadow-xl absolute top-16 z-10 rounded">
           <h5 className="text-center text-[20px] font-Poppins Otext-black dark: text-white p-3">
             Notifications
@@ -63,7 +63,7 @@ const DashboardHeader: FC<Props> = ({ open, setOpen }) => {
             </p>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 };
