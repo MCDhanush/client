@@ -34,6 +34,7 @@ const Header: FC<Props> = ({ activeItem, setOpen, route, open, setRoute }) => {
   const { data } = useSession();
   const [socialAuth, { isSuccess, error }] = useSocialAuthMutation();
   const [logout, setLogout] = useState(false);
+
   // const {} = useLogOutQuery(undefined, {
   //   skip: logout ? true : false,
   // });
