@@ -61,7 +61,7 @@ const Hero: FC<Props> = (props) => {
             <p className="font-Josefin dark:text-[#edfff4] text-[#000000b3] 1000px:pl-3 text-[18px] font-[600]">
               500k+ People already trustes us.{""}
               <Link
-                href="/course"
+                href="/courses"
                 className="dark:text-[#46e256] text-[crimson]"
               >
                 &nbsp; Course

@@ -64,7 +64,7 @@ const Footer = (props: Props) => {
               </li>
               <li>
                 <Link
-                  href="/course-dashboard"
+                  href=""
                   className="text-base text-black dark:text-gray-300 dark:hover:text-white"
                 >
                   Course DashBoard
