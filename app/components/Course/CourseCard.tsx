@@ -14,7 +14,10 @@ type Props = {
 const CourseCard: FC<Props> = ({ item, isProfile }) => {
   // console.log(item);
   return (
-    <Box className="border-2 shadow-lg shadow-cyan-500/50 border-indigo-400/100">
+    <Link
+      href="/courses"
+      className="border-2 shadow-lg shadow-cyan-500/50 border-indigo-400/100"
+    >
       <div className="w-full min-h-[40vh] dark:bg-slate-500 dark:bg-opacity-20 backdrop-blur dark:border-[#fffffd1d] border-[#00000015] dark:shadow-[bg-slate-700] rounded-lg p-3 shadow-sm dark-shadow-inner">
         <Image
           src={item.thumbnail.url}
@@ -56,7 +59,7 @@ const CourseCard: FC<Props> = ({ item, isProfile }) => {
           </div>
         </div>
       </div>
-    </Box>
+    </Link>
   );
 };
 

@@ -16,10 +16,7 @@ const Course: FC<Props> = ({ item, isProfile }) => {
   // console.log(item);
   return (
     <>
-      <Link
-        className="border-2 shadow-lg shadow-cyan-500/50 border-indigo-400/100"
-        href={`courses/${item._id}`}
-      >
+      <Box className="border-2 shadow-lg shadow-cyan-500/50 border-indigo-400/100">
         <div className="w-full min-h-[40vh] dark:bg-slate-500 dark:bg-opacity-20 backdrop-blur dark:border-[#fffffd1d] border-[#00000015] dark:shadow-[bg-slate-700] rounded-lg p-3 shadow-sm dark-shadow-inner">
           <Image
             src={item.thumbnail.url}
@@ -60,6 +57,15 @@ const Course: FC<Props> = ({ item, isProfile }) => {
               </h5>
             </div>
           </div>
+          {/* <br /> */}
+          <Link
+            href={`courses/${item._id}`}
+            className="underline text-violet-500 hover:text-orange-600 text-[15px]"
+          >
+            {" "}
+            Click to get into the course...⭐💫
+          </Link>
+          <br />
           <br />
           <div className="dark:text-white text-black m-auto h-[200px] pb-5 mb-8  ">
             <h5 className="text-sky-400">Description:</h5>
@@ -72,7 +78,7 @@ const Course: FC<Props> = ({ item, isProfile }) => {
             </span>
           </div>
         </div>
-      </Link>
+      </Box>
     </>
   );
 };
