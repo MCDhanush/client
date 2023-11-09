@@ -56,7 +56,7 @@ const Reviews = (props: Props) => {
       <div className="w-full 800px:flex items-center">
         <div className="800px:w-[50% ] w-full">
           <Image
-            src={require("../../../public/assets/banner-img-2.png")}
+            src="https://res.cloudinary.com/dbdyxunaq/image/upload/v1699504849/banner-img-2_lgrtjf.png"
             width={700}
             height={700}
             alt="business"

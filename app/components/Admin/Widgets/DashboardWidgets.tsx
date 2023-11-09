@@ -15,7 +15,9 @@ const DashboardWidgets: FC<Props> = (props: Props) => {
           <h1 className={`${styles.title}  `}>Welcome to Admin Dashboard</h1>
           <br />
           <Image
-            src={require("../../../../public/assets/dashboard-bannner.jpg")}
+            src="https://res.cloudinary.com/dbdyxunaq/image/upload/v1699504849/dashboard-bannner_ncb3ob.jpg"
+            width={500}
+            height={500}
             alt=""
             className="object-contain  800px:w-[60%] m-auto max-xl:h-[300px]  "
           />

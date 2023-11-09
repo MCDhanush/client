@@ -10,7 +10,9 @@ const Hero: FC<Props> = (props) => {
       <div className=" !h-[950px] top-[100px] flex-wrap flex 900px:flex 1000px:top-[unset]  dark:bg-gradient-to-b bg-no-repeat dark:from-gray-900 dark:to-black  1500px:h-[700px] 1500px:w-[700px] 1100px:h-[600px] 1100px:w-[600px]  mt-0	max-w-fit min-w-[100%]    rounded-red">
         <div className="1000px:w-[40%] flex 1000px:min-h-screen items-center justify-end 1000px:pt-[0] z-10  dark:bg-gradient-to-b bg-no-repeat dark:from-gray-900 dark:to-black duration-300">
           <Image
-            src={require("../../../public/assets/banner-img-1.png")}
+            src="https://res.cloudinary.com/dbdyxunaq/image/upload/v1699504263/banner-img-1_cz6i7g.png"
+            width="800"
+            height="400"
             alt=""
             className="object-contain 1100px:max-w-[90%] w-[90%] 1500px:max-w-[85%] h-[auto] z-[10]"
           />
@@ -42,19 +44,25 @@ const Hero: FC<Props> = (props) => {
           </div> */}
           {/* <br /> */}
           <br />
-          <div className="1500px:w-[55%] 1100px:w-[78%] w-[90%] flex items-center">
+          <div className="1500px:w-[55%] 1100px:w-[78%] w-[90%] pl-2 flex items-center">
             <Image
-              src={require("../../../public/assets/client-3.jpg")}
+              src="https://res.cloudinary.com/dbdyxunaq/image/upload/v1699504848/client-1_vrpmkd.jpg"
+              height={46}
+              width={46}
               alt=""
               className="rounded-full ml-[-20px]"
             />
             <Image
-              src={require("../../../public/assets/client-2.jpg")}
+              src="https://res.cloudinary.com/dbdyxunaq/image/upload/v1699504848/client-3_xn0dcd.jpg"
+              height={46}
+              width={46}
               alt=""
               className="rounded-full ml-[-20px]"
             />
             <Image
-              src={require("../../../public/assets/client-1.jpg")}
+              src="https://res.cloudinary.com/dbdyxunaq/image/upload/v1699504848/client-2_fcwxzs.jpg"
+              height={46}
+              width={46}
               alt=""
               className="rounded-full ml-[-20px]"
             />
