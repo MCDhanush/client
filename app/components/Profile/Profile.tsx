@@ -24,7 +24,7 @@ const Profile: FC<Props> = ({ user }) => {
   const [active, setActive] = useState(1);
 
   const logOutHandler = async () => {
-    setLogout(true);
+    // setLogout(true);
     // await signOut();
     toast.error("Logout successfully");
     // redirect("/");
