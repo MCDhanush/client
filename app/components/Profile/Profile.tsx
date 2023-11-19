@@ -1,7 +1,7 @@
 "use client";
 import React, { FC, useState } from "react";
 import SideBarProfile from "./SideBarProfile";
-import { useLogOutQuery } from "@/redux/features/auth/authApi";
+import { useLogOutMutation } from "@/redux/features/auth/authApi";
 import { signOut } from "next-auth/react";
 import { redirect } from "next/navigation";
 import ProfileInfo from "./ProfileInfo";
@@ -16,16 +16,18 @@ type Props = {
 const Profile: FC<Props> = ({ user }) => {
   const [scroll, setScroll] = useState(false);
   const [avatar, setAvatar] = useState(null);
-  const [logout, setLogout] = useState(false);
-  const {} = useLogOutQuery(undefined, {
-    skip: !logout ? true : false,
-  });
+  const [logoutState, setLogout] = useState(false);
+  // const (logout) = useLogOutQuery(undefined, {
+  //   skip: !logoutState ? true : false,
+  // });
+  const [logout] = useLogOutMutation();
 
   const [active, setActive] = useState(1);
 
   const logOutHandler = async () => {
-    // setLogout(true);
-    // await signOut();
+    setLogout(true);
+    await signOut();
+    // logout();
     toast.error("Logout successfully");
     // redirect("/");
   };
